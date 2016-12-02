@@ -1,0 +1,11 @@
+npm install
+createdb bookshelf_dev
+createdb bookshelf_test
+
+Update knexfile.js
+'postgres://localhost/bookshelf_dev'
+'postgres://localhost/bookshelf_test'
+
+FAILED:
+JWT information:
+bash -c 'echo "JWT_SECRET="$(openssl rand -hex 64)' > .env
